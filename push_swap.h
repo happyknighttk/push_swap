@@ -1,14 +1,14 @@
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-# include <unistd.h>
-# include <stdlib.h>
+//# include <unistd.h>
+//# include <stdlib.h>
 
-typedef struct s_push
+typedef struct s_stack_node
 {
-	int				number;
-	int				index;
-	struct s_push	*next;
-}	t_push;
+	int					number;
+	int					index;
+	struct s_stack_node	*next;
+}	t_stack_node;
 
 #endif
