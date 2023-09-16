@@ -6,7 +6,7 @@
 /*   By: tkayis <tkayis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/05 18:22:34 by tkayis            #+#    #+#             */
-/*   Updated: 2023/09/12 14:05:53 by tkayis           ###   ########.fr       */
+/*   Updated: 2023/09/15 15:59:01 by tkayis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_lstsize(t_stack_node *lst)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
 	while (lst)
