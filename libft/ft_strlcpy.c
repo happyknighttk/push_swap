@@ -6,7 +6,7 @@
 /*   By: tkayis <tkayis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/05 18:23:23 by tkayis            #+#    #+#             */
-/*   Updated: 2023/09/12 14:16:55 by tkayis           ###   ########.fr       */
+/*   Updated: 2023/09/17 18:46:58 by tkayis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 	i = 0;
 	if (dstsize > 0)
-	{	
+	{
 		while (i < (dstsize - 1) && src[i])
 		{
 			dst[i] = src[i];

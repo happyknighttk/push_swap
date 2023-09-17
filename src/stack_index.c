@@ -6,10 +6,9 @@
 /*   By: tkayis <tkayis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 19:08:27 by tkayis            #+#    #+#             */
-/*   Updated: 2023/09/16 19:08:28 by tkayis           ###   ########.fr       */
+/*   Updated: 2023/09/17 21:37:51 by tkayis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "../include/push_swap.h"
 
@@ -17,7 +16,7 @@ static	t_stack_node	*which_next_min(t_stack_node **stack)
 {
 	t_stack_node	*head;
 	t_stack_node	*min;
-	int		min_index;
+	int				min_index;
 
 	min = 0;
 	min_index = 1;
@@ -26,7 +25,8 @@ static	t_stack_node	*which_next_min(t_stack_node **stack)
 	{
 		while (head)
 		{
-			if ((head->index == -1) && (min_index || head->number < min->number))
+			if ((head->index == -1) && (min_index
+					|| head->number < min->number))
 			{
 				min = head;
 				min_index = 0;

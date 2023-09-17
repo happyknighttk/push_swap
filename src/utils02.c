@@ -6,10 +6,9 @@
 /*   By: tkayis <tkayis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 19:08:50 by tkayis            #+#    #+#             */
-/*   Updated: 2023/09/17 17:24:22 by tkayis           ###   ########.fr       */
+/*   Updated: 2023/09/17 21:36:56 by tkayis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "../include/push_swap.h"
 
@@ -86,7 +85,7 @@ void	ft_duplic_checker(t_stack_node *stack)
 {
 	t_stack_node	*now;
 	t_stack_node	*after;
-	int		value;
+	int				value;
 
 	now = stack;
 	while (now)

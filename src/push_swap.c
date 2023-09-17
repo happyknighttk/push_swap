@@ -6,10 +6,9 @@
 /*   By: tkayis <tkayis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 19:08:22 by tkayis            #+#    #+#             */
-/*   Updated: 2023/09/17 17:24:28 by tkayis           ###   ########.fr       */
+/*   Updated: 2023/09/17 21:34:15 by tkayis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "../include/push_swap.h"
 
@@ -92,10 +91,7 @@ void	check_whitespace(char **str)
 			j++;
 		}
 		if (flag == 0)
-		{
-			ft_putstr_fd("Error\n", 2);
-			exit(1);
-		}	
+			ft_error();
 		flag = 0;
 		i++;
 	}
@@ -105,7 +101,7 @@ int	main(int ac, char **av)
 {
 	t_stack_node	**stack_a;
 	t_stack_node	**stack_b;
-	int		i;
+	int				i;
 
 	if (ac < 2)
 		return (0);

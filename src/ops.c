@@ -6,10 +6,9 @@
 /*   By: tkayis <tkayis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 19:08:32 by tkayis            #+#    #+#             */
-/*   Updated: 2023/09/16 19:08:33 by tkayis           ###   ########.fr       */
+/*   Updated: 2023/09/17 21:31:10 by tkayis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "../include/push_swap.h"
 
@@ -35,7 +34,7 @@ void	rra(t_stack_node **stack_a)
 	t_stack_node	*tmp;
 	t_stack_node	*next_null;
 	t_stack_node	*tmp2;
-	int		a;
+	int				a;
 
 	a = ft_lstsize(*stack_a);
 	if (a <= 1)
@@ -55,7 +54,7 @@ void	rra(t_stack_node **stack_a)
 void	pa(t_stack_node **stack_a, t_stack_node **stack_b)
 {
 	t_stack_node	*temp;
-	int		s;
+	int				s;
 
 	s = ft_lstsize(*stack_b);
 	if (s <= 0)
@@ -70,7 +69,7 @@ void	pa(t_stack_node **stack_a, t_stack_node **stack_b)
 void	pb(t_stack_node **stack_a, t_stack_node **stack_b)
 {
 	t_stack_node	*temp;
-	int		s;
+	int				s;
 
 	s = ft_lstsize(*stack_a);
 	if (s <= 0)
