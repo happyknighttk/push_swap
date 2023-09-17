@@ -6,7 +6,7 @@
 /*   By: tkayis <tkayis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 19:08:43 by tkayis            #+#    #+#             */
-/*   Updated: 2023/09/16 19:08:44 by tkayis           ###   ########.fr       */
+/*   Updated: 2023/09/17 17:30:17 by tkayis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	radix_sort(t_stack_node **stack_a, t_stack_node **stack_b)
 	int		j;
 	int		size;
 	int		max_bits;
-
+	
 	i = 0;
 	size = ft_lstsize(*stack_a);
 	max_bits = get_max_bits(stack_a);
