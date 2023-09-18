@@ -6,7 +6,7 @@
 /*   By: tkayis <tkayis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 19:08:22 by tkayis            #+#    #+#             */
-/*   Updated: 2023/09/17 21:34:15 by tkayis           ###   ########.fr       */
+/*   Updated: 2023/09/18 16:27:28 by tkayis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,7 +114,7 @@ int	main(int ac, char **av)
 	while (av[i])
 	{
 		if (av[i][0] == '\0')
-			ft_putstr_fd("Error\n", 2);
+			ft_error();
 		i++;
 	}
 	ft_check_and_stack(stack_a, ac, av);

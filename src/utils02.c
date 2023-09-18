@@ -6,7 +6,7 @@
 /*   By: tkayis <tkayis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 19:08:50 by tkayis            #+#    #+#             */
-/*   Updated: 2023/09/17 21:36:56 by tkayis           ###   ########.fr       */
+/*   Updated: 2023/09/18 17:15:56 by tkayis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,9 +54,9 @@ static void	ft_check_arg(char *str)
 
 int	ft_tatoi(char *str)
 {
-	int		i;
-	int		sign;
-	long	res;
+	int			i;
+	int			sign;
+	long long	res;
 
 	i = 0;
 	sign = 1;
@@ -73,10 +73,8 @@ int	ft_tatoi(char *str)
 	while (ft_isdigit(str[i]))
 	{
 		res = res * 10 + (str[i++] - '0');
-		if (res > 2147483647)
-			ft_error();
 	}
-	if ((res * sign) == 2147483648)
+	if (!(-2147483648 <= (res * sign) && (res * sign) <= 2147483647))
 		ft_error();
 	return ((int)res * sign);
 }
