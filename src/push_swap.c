@@ -6,7 +6,7 @@
 /*   By: tkayis <tkayis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 19:08:22 by tkayis            #+#    #+#             */
-/*   Updated: 2023/09/18 16:27:28 by tkayis           ###   ########.fr       */
+/*   Updated: 2023/09/19 13:09:27 by tkayis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ static void	ft_check_and_stack(t_stack_node **stack, int ac, char **av)
 
 int	ft_sorted_checker(t_stack_node *stack_a)
 {
-	int		i;
+	int	i;
 
 	i = stack_a->number;
 	while (stack_a)
@@ -101,7 +101,6 @@ int	main(int ac, char **av)
 {
 	t_stack_node	**stack_a;
 	t_stack_node	**stack_b;
-	int				i;
 
 	if (ac < 2)
 		return (0);
@@ -110,13 +109,6 @@ int	main(int ac, char **av)
 	stack_b = (t_stack_node **)malloc(sizeof(t_stack_node));
 	*stack_a = 0;
 	*stack_b = 0;
-	i = 1;
-	while (av[i])
-	{
-		if (av[i][0] == '\0')
-			ft_error();
-		i++;
-	}
 	ft_check_and_stack(stack_a, ac, av);
 	ft_duplic_checker(*stack_a);
 	if (ft_sorted_checker(*stack_a))

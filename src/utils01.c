@@ -6,7 +6,7 @@
 /*   By: tkayis <tkayis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 19:08:48 by tkayis            #+#    #+#             */
-/*   Updated: 2023/09/17 21:36:42 by tkayis           ###   ########.fr       */
+/*   Updated: 2023/09/18 20:13:25 by tkayis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,7 @@ void	space_checker(char const *s)
 			return ;
 		s++;
 	}
-	ft_putstr_fd("error\n", 2);
-	exit(1);
+	ft_error();
 }
 
 char	**ft_split_1(char const *s, char c)
