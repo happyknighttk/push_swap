@@ -1,6 +1,6 @@
 # PUSH_SWAP
 
-Push Swap is a C program that performs a stack operation to sort given numbers using various sorting algorithms.
+Push Swap is a C program that performs a stack operation to sort given numbers using the radix sorting algorithm.
 
 ## Usage
 
